@@ -22,10 +22,15 @@ header {
   background-color: #476de9;
   
 }
+h1 {
+  text-align: center;
+  margin-bottom: 100px;
+  transform: translate(-120px, 20px);
+}
 
 h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 h3 {
     text-align: center;
@@ -35,7 +40,7 @@ h3 {
 
 label {
   display: block;
-  margin-top: 10px;
+  margin-top: 12px;
   font-weight: bold;
 }
 
@@ -43,29 +48,31 @@ input {
   width: 100%;
   padding: 8px;
   margin-top: 5px;
-  border: 1px solid #000000;
+  border: 1px solid #aaa6a6;
   border-radius: 5px;
 }
 
 button {
   width: 100%;
-  margin-top: 15px;
+  margin-top: 20px;
   padding: 10px;
   background-color: #1c6dca;  
   color: rgb(255, 255, 255); 
-  border: none;
-  border-radius: 5px;
+  border: 5px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #43494d;
+  background-color: #474c50;
 }
 
 #mensagem {
   margin-top: 15px;
   text-align: center;
   font-weight: bold;
+  
+
 }
 
 header img {
@@ -73,13 +80,14 @@ header img {
   height: auto;
   display: block;
   margin: 0 auto 10px;
+  right: 500px;
 }
 
 img {
   width: 50px;
   height: auto; 
   border-radius: 10px;
-  justify-content: center; 
-  align-items: center;
-
+  float: right;
+  margin-left: 100px;
 }
+
