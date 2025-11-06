@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Questionario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2 id="boasVindas"></h2>
+
+    <h3>Responda as perguntas abaixo:</h3>
+
+    <div id="q1">
+
+      <label for ="name">1. Nome completo: </label>
+      <input type="text" id="name" placeholder="Digite seu nome" required>
+
+    </div>
+
+    <div id="q2">
+      
+      <label for ="curso">2. Curso em andamento: </label>
+      <select name="opcoes" id = "opcoes">
+      <option value="0"></option>
+      <option value="1">Sistemas da informação</option>
+      <option value="2">Design</option>
+      <option value="3">Jogos</option>
+      <option value="4">Analise Desenvolvimento de Sistemas</option>
+      </select>
+
+    </div>
+
+    <div id="q3">
+  
+    <label for = "email">3. E-mail para contato: </label>
+    <input type="email" id="email" placeholder="Digite seu curso" required>
+
+    </div>
+
+    <div id="q4">
+      
+    <label for ="cursoAvaliado">4. Curso ou Projeto que está avaliando:  </label>
+    <input type="text" id="cursoAvaliado" placeholder="Digite seu curso" required>
+
+    </div>
+
+    <div id="q5">
+
+    <label for ="data">5. Data que iniciou o curso/projeto:  </label>
+    <input type="date" id="data" placeholder="Digite seu curso" required>
+
+    </div>
+
+    <div id="q6">
+
+    <label for ="motivo">6. Qual foi o principal motivo que te levou a participar deste curso/projeto?  </label>
+    <input type="text" id="motivo" placeholder="Digite seu curso" required>
+
+    </div>
+
+    <div id="q7">
+
+    <label for ="avaliacao">7. Como você avalia a didática do professor ou orientador?  </label>
+    <input type="radio" name="didatica" value="excelente"> Excelente
+    <input type="radio" name="didatica" value="boa"> Boa
+    <input type="radio" name="didatica" value="regular"> Regular
+    <input type="radio" name="didatica" value="ruim"> Ruim
+
+    </div>
+
+
+    <div id="q8">
+
+    <label for ="temas">8. Quais temas ou módulos você mais gostou do curso? </label>
+    <input type="checkbox" id="temas" placeholder="" required>
+
+    </div>
+
+    <div id="q9">
+
+    <label for ="horas">9. Quantas horas por semana você dedicou ao curso/projeto? </label>
+    <input type="number" id="horas" placeholder="Digite aqui" required>
+
+    </div>
+
+
+    <div id="q101">
+
+      <label for ="escala">10. Em uma escala de 1 a 5, quanto o curso atendeu suas expectativas? </label>
+
+    </div>
+    <div id="q102">
+
+      <input type="radio" name="didatica" value="1"> 1<input type="radio" name="didatica" value="2"> 2
+      <input type="radio" name="didatica" value="3"> 3
+      <input type="radio" name="didatica" value="4"> 4
+      <input type="radio" name="didatica" value="5"> 5
+
+    </div>
+
+    <div id="q11">
+
+    <label for ="melhorar">11. Na sua visão, como poderiamos melhorar o questionario?</label>
+    <input type="text" id="melhorar" placeholder="Deixe aqui a sua opinião!" required>
+
+    </div>
+
+
+    <button id="enviar">Enviar</button>
+  </div>
+
+  <script>
+    //quando clicar em enviar
+    document.getElementById("enviar").addEventListener("click", function() {
+      alert("Respostas enviadas com sucesso!");
+    });
+  </script>
+  
+</body>
+</html>

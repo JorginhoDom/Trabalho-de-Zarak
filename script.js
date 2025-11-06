@@ -3,28 +3,21 @@ document.getElementById("formLogin").addEventListener("submit", function(e) {
 
   const nome = document.getElementById("nome").value.trim();
   const CPF = document.getElementById("CPF").value.trim();
-
-  
   const senha = document.getElementById("senha").value.trim();
-
   const mensagem = document.getElementById("mensagem");
 
-  if (nome === "" || CPF === "" || senha === "") {
-    mensagem.textContent = "Preencha todos os campos!";
-    mensagem.style.color = "red";
-    return;
-  }
+  if (nome === "Zarak" && CPF === "12345678900" && senha === "12345678900") {
+    mensagem.textContent = "Login realizado com sucesso!";
+    mensagem.style.color = "green";
 
-  
+    setTimeout(() => {
+  window.location.href = "perguntas.html";
+}, 1000);
 
-  console.log("Dados enviados:", { nome, CPF, senha });
+    document.getElementById("formLogin").reset();
 
-  mensagem.textContent = "Login realizado com sucesso!";
-  mensagem.style.color = "green";
+  } else {
+    alert("Login incorreto! Tente novamente.");
+    }
 
-    
-  document.getElementById("formLogin").reset();
-
-
-  
 });

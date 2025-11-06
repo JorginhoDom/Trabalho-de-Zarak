@@ -8,11 +8,23 @@ body {
   margin: 0;
 }
 
+
+#q101 {
+  padding: 10px
+  
+}
+#q102 {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: -5px;
+  padding: 20px;
+
+}
 .container {
   background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  width: 300px;
+  padding: 300px;
+  border-radius: 50px;
+  width: 100%;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
