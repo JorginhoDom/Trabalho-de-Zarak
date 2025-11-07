@@ -15,7 +15,9 @@
     <div id="q1">
 
       <label for ="name">1. Nome completo: </label>
-      <input type="text" id="name" placeholder="Digite seu nome" required>
+      <input type="text" id="name" placeholder="Digite seu nome" required oninput="this.value = this.value.replace(/[0-9]/g, '')"> 
+      <!-- required oninput ="this.value... faz com que nao se consiga colocar numeros dentro do Nome." -->
+
 
     </div>
 
@@ -41,21 +43,21 @@
 
     <div id="q4">
       
-    <label for ="cursoAvaliado">4. Curso ou Projeto que está avaliando:  </label>
+    <label for ="cursoAvaliado">4. Projeto que está avaliando:  </label>
     <input type="text" id="cursoAvaliado" placeholder="Digite seu curso" required>
 
     </div>
 
     <div id="q5">
 
-    <label for ="data">5. Data que iniciou o curso/projeto:  </label>
+    <label for ="data">5. Data que iniciou o projeto:  </label>
     <input type="date" id="data" placeholder="Digite seu curso" required>
 
     </div>
 
     <div id="q6">
 
-    <label for ="motivo">6. Qual foi o principal motivo que te levou a participar deste curso/projeto?  </label>
+    <label for ="motivo">6. Explique o projeto de uma pespectiva geral: </label>
     <input type="text" id="motivo" placeholder="Digite seu curso" required>
 
     </div>
@@ -73,25 +75,25 @@
 
     <div id="q8">
 
-    <label for ="temas">8. Quais temas ou módulos você mais gostou do curso? </label>
-    <input type="checkbox" id="temas" placeholder="" required>
+    <label for ="temas">8. O que mais te encantou neste projeto? </label>
+    <input type="text" id="temas" placeholder="Deixe sua opinião " required>
 
     </div>
 
     <div id="q9">
 
-    <label for ="horas">9. Quantas horas por semana você dedicou ao curso/projeto? </label>
+    <label for ="horas">9. Quantas horas por semana você dedicou/dedica ao projeto? </label>
     <input type="number" id="horas" placeholder="Digite aqui" required>
 
     </div>
 
 
-    <div id="q101">
+    <div id="q10_1">
 
       <label for ="escala">10. Em uma escala de 1 a 5, quanto o curso atendeu suas expectativas? </label>
 
     </div>
-    <div id="q102">
+    <div id="q10_2">
 
       <input type="radio" name="didatica" value="1"> 1<input type="radio" name="didatica" value="2"> 2
       <input type="radio" name="didatica" value="3"> 3

@@ -4,16 +4,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 90vh;
   margin: 0;
+  padding: 20px
+
 }
 
 
-#q101 {
+#q10_1 {
   padding: 10px
   
 }
-#q102 {
+#q10_2 {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   gap: -5px;
@@ -22,10 +24,14 @@ body {
 }
 .container {
   background: #fff;
-  padding: 300px;
-  border-radius: 50px;
-  width: 100%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 40px 80px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 750px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  box-sizing: border-box;
+  
+  margin: 60px;
 }
 
 header {

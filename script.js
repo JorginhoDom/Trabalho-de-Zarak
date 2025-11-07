@@ -1,3 +1,5 @@
+console.log("✅ script.js carregado");
+
 document.getElementById("formLogin").addEventListener("submit", function(e) {
   e.preventDefault(); 
 
@@ -6,7 +8,7 @@ document.getElementById("formLogin").addEventListener("submit", function(e) {
   const senha = document.getElementById("senha").value.trim();
   const mensagem = document.getElementById("mensagem");
 
-  if (nome === "Zarak" && CPF === "12345678900" && senha === "12345678900") {
+  if (nome === "1234" && CPF === "1234" && senha === "1234") {
     mensagem.textContent = "Login realizado com sucesso!";
     mensagem.style.color = "green";
 
